@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for Privacy Guardian - Your privacy data stays on your device">
-    <title>Privacy Guardian - Privacy Policy</title>
+    <meta name="description" content="Privacy Policies for Astreon Apps - Privacy Guardian and Prayer Times">
+    <title>Astreon Apps - Privacy Policies</title>
     <style>
         * {
             margin: 0;
@@ -16,123 +16,164 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f5f5f5;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            text-align: center;
             color: white;
             padding: 40px 20px;
-            text-align: center;
-            margin: -20px -20px 30px -20px;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
 
         .subtitle {
-            font-size: 1.1em;
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .app-icon {
+            font-size: 4em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .app-card h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .app-card p {
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .app-card .meta {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 15px;
+        }
+
+        .view-policy-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: opacity 0.3s ease;
+            width: 100%;
+        }
+
+        .app-card:hover .view-policy-btn {
             opacity: 0.9;
         }
 
-        .meta {
-            background: #f8f9fa;
-            padding: 15px;
-            border-left: 4px solid #667eea;
-            margin: 20px 0;
+        .privacy-guardian-card {
+            border-top: 5px solid #667eea;
         }
 
-        h2 {
-            color: #667eea;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e0e0e0;
-        }
-
-        h3 {
-            color: #555;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        p, li {
-            margin-bottom: 10px;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        .highlight {
-            background: #fff3cd;
-            padding: 15px;
-            border-left: 4px solid #ffc107;
-            margin: 20px 0;
-        }
-
-        .summary {
-            background: #d4edda;
-            padding: 20px;
-            border-left: 4px solid #28a745;
-            margin: 30px 0;
-        }
-
-        .summary h2 {
-            color: #28a745;
-            border: none;
-            margin-top: 0;
-        }
-
-        .summary ul {
-            list-style: none;
-            margin-left: 0;
-        }
-
-        .summary li:before {
-            content: "✅ ";
-            color: #28a745;
+        .athan-card {
+            border-top: 5px solid #2c5f2d;
         }
 
         footer {
             text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            color: #666;
+            color: white;
+            margin-top: 60px;
+            padding: 20px;
+            opacity: 0.9;
         }
 
-        a {
-            color: #667eea;
-            text-decoration: none;
-        }
-
-        a:hover {
+        footer a {
+            color: white;
             text-decoration: underline;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
+        .info-box {
+            background: rgba(255,255,255,0.95);
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
 
+        .info-box h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            list-style: none;
+            margin-left: 0;
+            margin-top: 15px;
+        }
+
+        .info-box li {
+            padding: 8px 0;
+            color: #555;
+        }
+
+        .info-box li:before {
+            content: "✓ ";
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
             h1 {
                 font-size: 2em;
             }
 
-            header {
-                padding: 30px 10px;
-                margin: -10px -10px 20px -10px;
+            .apps-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -140,243 +181,59 @@
 <body>
     <div class="container">
         <header>
-            <h1>🛡️ Privacy Guardian</h1>
-            <p class="subtitle">Privacy Policy</p>
+            <h1>🌟 Astreon Apps</h1>
+            <p class="subtitle">Privacy Policies & App Information</p>
         </header>
 
-        <div class="meta">
-            <strong>Effective Date:</strong> October 6, 2025<br>
-            <strong>Last Updated:</strong> October 6, 2025<br>
-            <strong>Version:</strong> 1.0
+        <div class="apps-grid">
+            <!-- Privacy Guardian Card -->
+            <a href="privacy-guardian-policy.html" class="app-card privacy-guardian-card">
+                <div class="app-icon">🛡️</div>
+                <h2>Privacy Guardian</h2>
+                <p>Monitor app permissions and protect your privacy</p>
+                <div class="meta">
+                    <strong>Package:</strong> com.sarowar.privacyguardian<br>
+                    <strong>Platform:</strong> Android<br>
+                    <strong>Updated:</strong> October 6, 2025
+                </div>
+                <div class="view-policy-btn">View Privacy Policy →</div>
+            </a>
+
+            <!-- Astreon Prayer Times Card -->
+            <a href="athan-privacy-policy.html" class="app-card athan-card">
+                <div class="app-icon">🕌</div>
+                <h2>Astreon Prayer Times</h2>
+                <p>Islamic prayer times, Qibla direction, and Athan notifications</p>
+                <div class="meta">
+                    <strong>Package:</strong> com.athan.astreon<br>
+                    <strong>Platform:</strong> Android & iOS<br>
+                    <strong>Updated:</strong> October 16, 2025
+                </div>
+                <div class="view-policy-btn">View Privacy Policy →</div>
+            </a>
         </div>
 
-        <section>
-            <h2>Introduction</h2>
-            <p>Privacy Guardian ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how our Android application collects, uses, and safeguards your information.</p>
-
-            <div class="highlight">
-                <strong>Our Core Principle:</strong> Your privacy data stays on your device. We do not collect, transmit, or share any of your personal information with third parties.
-            </div>
-        </section>
-
-        <section>
-            <h2>Information We Collect</h2>
-            <p>Privacy Guardian analyzes apps installed on your device to help you understand potential privacy risks. The app collects the following information <strong>locally on your device only</strong>:</p>
-
-            <h3>1. Installed Applications List</h3>
+        <div class="info-box">
+            <h3>📋 Our Privacy Commitment</h3>
+            <p>All Astreon apps are built with privacy as the top priority:</p>
             <ul>
-                <li><strong>What:</strong> Names and package identifiers of apps installed on your device</li>
-                <li><strong>Why:</strong> To scan and analyze which apps you have installed</li>
-                <li><strong>How:</strong> Using Android's QUERY_ALL_PACKAGES permission</li>
-                <li><strong>Storage:</strong> Stored locally in the app's database on your device</li>
+                <li>All data stored locally on your device</li>
+                <li>No data transmission to external servers</li>
+                <li>No third-party tracking or analytics</li>
+                <li>No advertisements</li>
+                <li>Full transparency in our privacy policies</li>
+                <li>You control your data completely</li>
             </ul>
-
-            <h3>2. App Permissions Data</h3>
-            <ul>
-                <li><strong>What:</strong> List of permissions requested by each installed app</li>
-                <li><strong>Why:</strong> To calculate privacy risk scores and identify potentially invasive apps</li>
-                <li><strong>How:</strong> Analyzing each app's manifest through Android PackageManager</li>
-                <li><strong>Storage:</strong> Stored locally in the app's database on your device</li>
-            </ul>
-
-            <h3>3. Network Usage Data (Optional)</h3>
-            <ul>
-                <li><strong>What:</strong> Data consumption statistics per app (WiFi and mobile data)</li>
-                <li><strong>Why:</strong> To help you monitor which apps use your data</li>
-                <li><strong>How:</strong> Using Android's UsageStatsManager (requires user permission)</li>
-                <li><strong>Storage:</strong> Stored locally in the app's database on your device</li>
-            </ul>
-
-            <h3>4. App Settings and Preferences</h3>
-            <ul>
-                <li><strong>What:</strong> Your app configuration (scan intervals, notification preferences)</li>
-                <li><strong>Why:</strong> To remember your preferences and settings</li>
-                <li><strong>How:</strong> Stored in Android SharedPreferences</li>
-                <li><strong>Storage:</strong> Stored locally on your device</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>How We Use Your Information</h2>
-            <p>All information collected by Privacy Guardian is used <strong>exclusively on your device</strong> for the following purposes:</p>
-            <ul>
-                <li><strong>Privacy Score Calculation:</strong> Analyzing app permissions to calculate privacy risk scores</li>
-                <li><strong>App Monitoring:</strong> Tracking which apps access sensitive permissions</li>
-                <li><strong>Data Usage Tracking:</strong> Showing you how much data each app consumes</li>
-                <li><strong>Privacy Alerts:</strong> Notifying you about apps with high privacy risks</li>
-                <li><strong>User Experience:</strong> Remembering your settings and preferences</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Information Sharing and Third Parties</h2>
-            <p><strong>We do NOT:</strong></p>
-            <ul>
-                <li>Collect any data from your device to our servers</li>
-                <li>Share your information with third parties</li>
-                <li>Sell your data to advertisers</li>
-                <li>Use analytics or tracking services</li>
-                <li>Transmit any data over the internet</li>
-            </ul>
-            <p><strong>All data stays on your device.</strong> Privacy Guardian operates entirely offline and does not require an internet connection.</p>
-        </section>
-
-        <section>
-            <h2>Data Storage and Security</h2>
-
-            <h3>Local Storage Only</h3>
-            <ul>
-                <li>All data is stored in a local database on your device using Android Room Database</li>
-                <li>No cloud synchronization or backup (unless you manually use Android's built-in backup)</li>
-                <li>Data is protected by Android's app sandboxing security model</li>
-            </ul>
-
-            <h3>Data Protection</h3>
-            <ul>
-                <li>Your data is accessible only by Privacy Guardian</li>
-                <li>Other apps cannot access Privacy Guardian's database</li>
-                <li>Data is stored in your device's internal storage (protected by Android OS)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Your Data Rights</h2>
-
-            <h3>Access Your Data</h3>
-            <p>You can view all collected data within the app:</p>
-            <ul>
-                <li>Dashboard shows summary statistics</li>
-                <li>Apps List shows all scanned apps and their scores</li>
-                <li>App Details shows permissions for each app</li>
-            </ul>
-
-            <h3>Delete Your Data</h3>
-            <p>You have full control to delete all data at any time:</p>
-            <ol>
-                <li>Open Privacy Guardian</li>
-                <li>Navigate to Settings</li>
-                <li>Tap "Clear All Data"</li>
-                <li>Confirm deletion</li>
-            </ol>
-            <p>This will permanently delete all scanned app information, app privacy scores, usage statistics, and app settings.</p>
-
-            <h3>Uninstalling the App</h3>
-            <p>Uninstalling Privacy Guardian automatically removes all data from your device, as per Android's standard app behavior.</p>
-        </section>
-
-        <section>
-            <h2>Permissions We Request</h2>
-
-            <h3>1. QUERY_ALL_PACKAGES (Required)</h3>
-            <ul>
-                <li><strong>Purpose:</strong> To access the list of installed apps on your device</li>
-                <li><strong>Disclosure:</strong> You will be shown a prominent disclosure dialog explaining this before first use</li>
-                <li><strong>Required:</strong> Yes - the app cannot function without this permission</li>
-            </ul>
-
-            <h3>2. PACKAGE_USAGE_STATS (Optional)</h3>
-            <ul>
-                <li><strong>Purpose:</strong> To monitor app usage statistics and data consumption</li>
-                <li><strong>How to Grant:</strong> Settings > Enable Monitoring toggle</li>
-                <li><strong>Required:</strong> No - app works without it, but with limited functionality</li>
-            </ul>
-
-            <h3>3. POST_NOTIFICATIONS (Optional - Android 13+)</h3>
-            <ul>
-                <li><strong>Purpose:</strong> To send you privacy alerts about high-risk apps</li>
-                <li><strong>Required:</strong> No - you can disable notifications</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Children's Privacy</h2>
-            <p>Privacy Guardian does not knowingly collect information from children under 13. The app is designed for general audiences and does not target children. Parents should supervise their children's use of mobile devices.</p>
-        </section>
-
-        <section>
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. When we make changes:</p>
-            <ul>
-                <li>We will update the "Last Updated" date at the top</li>
-                <li>Significant changes will be communicated through an in-app notification</li>
-                <li>Continued use of the app constitutes acceptance of the updated policy</li>
-            </ul>
-            <p>You can always view the latest version of this policy in the app: Settings > Privacy Policy</p>
-        </section>
-
-        <section>
-            <h2>Data Retention</h2>
-
-            <h3>While App is Installed</h3>
-            <ul>
-                <li>Data is retained locally on your device for as long as you use the app</li>
-                <li>You can delete data anytime using "Clear All Data" in Settings</li>
-            </ul>
-
-            <h3>After Uninstallation</h3>
-            <ul>
-                <li>All data is automatically removed when you uninstall the app</li>
-                <li>No data remains on external servers (because we don't use any)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>International Users</h2>
-            <p>Privacy Guardian is available worldwide. Since all data is stored locally on your device:</p>
-            <ul>
-                <li>No data crosses international borders</li>
-                <li>GDPR, CCPA, and other privacy regulations are inherently respected</li>
-                <li>No cookies or tracking technologies are used</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data:</p>
-            <ul>
-                <li><strong>Email:</strong> astreon.policy@gmail.com</li>
-                <li><strong>Response Time:</strong> We aim to respond within 7 business days</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Compliance</h2>
-            <p>Privacy Guardian is designed to comply with:</p>
-            <ul>
-                <li>Google Play Store policies and requirements</li>
-                <li>Android app privacy best practices</li>
-                <li>General Data Protection Regulation (GDPR)</li>
-                <li>California Consumer Privacy Act (CCPA)</li>
-                <li>Other applicable privacy laws</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Your Consent</h2>
-            <p>By installing and using Privacy Guardian, you consent to this Privacy Policy.</p>
-            <p>You can withdraw consent at any time by:</p>
-            <ol>
-                <li>Deleting all data (Settings > Clear All Data), or</li>
-                <li>Uninstalling the app</li>
-            </ol>
-        </section>
-
-        <div class="summary">
-            <h2>Summary (TL;DR)</h2>
-            <ul>
-                <li>All data stays on your device</li>
-                <li>No data collection to servers</li>
-                <li>No third-party sharing</li>
-                <li>No ads or tracking</li>
-                <li>You can delete all data anytime</li>
-                <li>Open source and transparent</li>
-            </ul>
-            <p style="margin-top: 15px;"><strong>Privacy Guardian protects your privacy by never leaving your device.</strong></p>
+            <p style="margin-top: 20px;"><strong>Your privacy matters to us.</strong> Each app's privacy policy provides detailed information about what data is collected and how it's used.</p>
         </div>
 
         <footer>
-            <p><strong>Effective Date:</strong> October 6, 2025 | <strong>Version:</strong> 1.0</p>
-            <p style="margin-top: 10px;">This privacy policy was last updated on October 6, 2025.</p>
+            <p><strong>Astreon Apps</strong> - Privacy-Focused Mobile Applications</p>
+            <p style="margin-top: 10px;">Contact: <a href="mailto:astreon.policy@gmail.com">astreon.policy@gmail.com</a></p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                <a href="https://github.com/CodeRover98" target="_blank">GitHub</a> |
+                All apps comply with Google Play and Apple App Store policies
+            </p>
         </footer>
     </div>
 </body>
